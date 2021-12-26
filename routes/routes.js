@@ -3,7 +3,7 @@ const path = require('path');
 
 
 module.exports = (app) => {
-    let notes = JSON.parse(fs.readFileSync('./db/db.json', 'utf8'));
+    let notes = JSON.parse(fs.readFileSync('db/db.json', 'utf8'));
 
     app.get('/api/notes', (req, res) => {
         return res.json(notes);
@@ -31,11 +31,11 @@ module.exports = (app) => {
     }); 
 
     app.get('/notes', function (req, res) {
-        res.sendFile(path.join(__dirname, "./public/notes.html"));
+        res.sendFile(path.join(__dirname, "../public/notes.html"));
     });
 
     app.get('*', function (req, res) {
-        res.sendFile(path.join(__dirname, "./public/index.html"));
+        res.sendFile(path.join(__dirname, "../public/index.html"));
     }); 
 
     function updateFile() {
