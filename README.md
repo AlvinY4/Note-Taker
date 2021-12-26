@@ -12,4 +12,4 @@ https://quiet-cliffs-19030.herokuapp.com/
 
 ## Installation 
 
-Make sure you run npm istall and and have express installed as well. To run the application, insert node server.js into ypur command line and the application will be available to you on http://localhost:3000 or you can refer to the heroku link above. 
+Make sure you run npm install and and have express installed as well. To run the application, insert node server.js into your command line and the application will be available to you on http://localhost:3000 or you can refer to the heroku link above. 
